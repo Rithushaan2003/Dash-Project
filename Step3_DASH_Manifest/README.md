@@ -1,0 +1,64 @@
+# Step 3 — Creating the DASH Manifest (FFmpeg)
+
+In this step, I generated a DASH MPD manifest and segmented media files using FFmpeg.  
+This prepares the transcoded videos for adaptive bitrate streaming.
+
+---
+
+## 🎯 Purpose
+
+MPEG-DASH requires:
+- Multiple bitrate versions of the same content  
+- Segmented `.m4s` media chunks  
+- A manifest file (`.mpd`) describing all representations  
+
+This step packages the six transcoded MP4 files into a DASH-compliant structure.
+
+---
+
+## 🛠️ FFmpeg Command Used
+
+ffmpeg 
+-i 3127017_1500k.mp4 
+-i 3127017_2000k.mp4 
+-i 3127017_4000k.mp4 
+-i 5380054_1500k.mp4 
+-i 5380054_2000k.mp4 
+-i 5380054_4000k.mp4 
+-map 0:v -map 1:v -map 2:v -map 3:v -map 4:v -map 5:v 
+-c copy 
+-f dash 
+-use_template 1 
+-use_timeline 1 
+-seg_duration 4 
+-adaptation_sets "id=0,streams=v" 
+manifest.mpd
+
+
+This command:
+- Takes all six transcoded MP4 files  
+- Maps each video stream into the DASH output  
+- Copies the streams without re-encoding  
+- Produces the manifest and segmented `.m4s` files  
+
+---
+
+## 📸 Evidence
+
+This folder includes:
+- Screenshot of FFmpeg running the DASH packaging command  
+- Screenshot of the output directory showing:
+  - `manifest.mpd`
+  - `init-stream*.m4s`
+  - `chunk-stream*.m4s`
+
+---
+
+## ✔️ Output Files
+
+The DASH packaging produced:
+- `manifest.mpd` (DASH manifest)
+- Initialization segments (`init-stream*.m4s`)
+- Media segments (`chunk-stream*.m4s`)
+
+This completes **Task 1 — Step 3**.
