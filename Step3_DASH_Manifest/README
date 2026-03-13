@@ -60,4 +60,4 @@ The DASH packaging produced:
 - Initialization segments (`init-stream*.m4s`)
 - Media segments (`chunk-stream*.m4s`)
 
-This completes **Task 1 — Step 3**.
+This completes **Task 1 — Step 3**
