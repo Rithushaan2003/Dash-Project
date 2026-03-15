@@ -14,8 +14,6 @@ https://rithushaan2003.github.io/Dash-Project/Step4_DASH_Server/manifest.mpd (ri
 6. Clicked **Load Settings**, and the player successfully loaded and played the video.
 
 ## Evidence
-Below are the screenshots showing:
+Screenshots for this step are included in this folder.
 - The Bitmovin player successfully playing the DASH stream.
 - The Bitmovin configuration with the correct manifest URL entered.
-
-(Insert screenshots here)
