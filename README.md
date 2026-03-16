@@ -46,18 +46,20 @@ To reproduce the project:
 git clone <your-repo-url>
 
 2. Prepare the VMs
+
 • 	Import the Client VM and Prometheus VM
 
 • 	Ensure both are on the same internal network
 
 • 	Update packages:
+
 sudo apt update
 
-4. Install required tools
+3. Install required tools
 
-sudo apt install ffmpeg iperf3 tc curl apache2
+• sudo apt install ffmpeg iperf3 tc curl apache2
 
-5. Follow each step in order
+4. Follow each step in order
 
 • Start from Step1 and continue through Step8.
 
