@@ -7,7 +7,7 @@ Each step includes documentation, commands, screenshots, and results.
 
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 
 Step1_FFmpeg_Setup/            – FFmpeg installation and initial configuration
 
@@ -43,7 +43,7 @@ To reproduce the project:
 
 1. Clone the repository
 
-git clone <your-repo-url>
+git clone https://github.com/Rithushaan2003/Dash-Project.git
 
 2. Prepare the VMs
 
