@@ -73,17 +73,16 @@ Each step’s README explains:
 
 ---
 
-📸 Required Screenshots (Step 9)
+## 📸 Screenshots
 
-1. Repository Structure
-(Insert screenshot of your GitHub repo showing Step1–Step8 folders)
+### 1. Repository Structure
+![Repository Structure](Screenshots/repo_structure.png)
 
+### 2. Example Step Folder (Step 6)
+![Step 6 Folder](Screenshots/step6_folder.png)
 
-3. Example Step Folder
-(Insert screenshot of Step6 or Step7 folder showing README + screenshots)
-
-5. Example Terminal Output
-(Insert screenshot of a command such as , , or DASH server running)
+### 3. Terminal Output Example
+![Terminal Output](Screenshots/terminal_output.png)
 
 ---
 
